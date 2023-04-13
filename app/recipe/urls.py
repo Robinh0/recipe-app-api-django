@@ -18,6 +18,7 @@ router = DefaultRouter()
 # ModelViewset, its going to include all CRUD operations and
 # endpoints (GET, POST, PUT, PATCH, DELETE).
 router.register('recipes', views.RecipeViewSet)
+router.register('tags', views.TagViewSet)
 
 app_name = 'recipe'
 
