@@ -19,6 +19,7 @@ router = DefaultRouter()
 # endpoints (GET, POST, PUT, PATCH, DELETE).
 router.register('recipes', views.RecipeViewSet)
 router.register('tags', views.TagViewSet)
+router.register('ingredients', views.IngredientViewSet)
 
 app_name = 'recipe'
 
