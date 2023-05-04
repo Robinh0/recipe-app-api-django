@@ -426,10 +426,6 @@ class PrivateRecipeAPITests(TestCase):
         s2 = RecipeSerializer(r2)
         s3 = RecipeSerializer(r3)
 
-        print(f'\nres: {res}')
-        print(f'\nres.data: {res.data}')
-        print(f'\ns1.data: {s1.data}')
-
         self.assertIn(s1.data, res.data)
         self.assertIn(s2.data, res.data)
         self.assertNotIn(s3.data, res.data)
@@ -450,10 +446,6 @@ class PrivateRecipeAPITests(TestCase):
         s1 = RecipeSerializer(r1)
         s2 = RecipeSerializer(r2)
         s3 = RecipeSerializer(r3)
-
-        print(f'\nres: {res}')
-        print(f'\nres.data: {res.data}')
-        print(f'\ns1.data: {s1.data}')
 
         self.assertIn(s1.data, res.data)
         self.assertIn(s2.data, res.data)
