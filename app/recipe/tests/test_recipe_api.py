@@ -412,7 +412,8 @@ class PrivateRecipeAPITests(TestCase):
         tag1 = Tag.objects.create(user=self.user, name='Green Curry Mix')
         tag2 = Tag.objects.create(user=self.user, name='Red Curry Mix')
 
-        # We can add tags here, because we have a ManyToMany relationship in the recipe model.
+        # We can add tags here, because we have a
+        # ManyToMany relationship in the recipe model.
         r1.tags.add(tag1)
         r2.tags.add(tag2)
 
